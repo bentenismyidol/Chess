@@ -42,12 +42,7 @@ public class StartMenu implements Runnable {
     final JButton back = new JButton(new ImageIcon("pic/9.png")); //ẢNH 9
     ImageIcon backiconin = new ImageIcon("pic/10.png"); // ẢNH 10
     ImageIcon backiconout = new ImageIcon("pic/9.png"); // ẢNH 9
-    // option button
-    final JButton option = new JButton("option");
-    final JButton optionexit = new JButton("OPE");
-    final JButton volUP = new JButton("UP");
-    final JButton volDOWN = new JButton("DOWN");
-    final JButton volMute = new JButton("mute");
+  
     //sound effect
     public void SoundEffects() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
         File file = new File("pic/13.wav"); //VIDEO 13
@@ -392,7 +387,6 @@ public class StartMenu implements Runnable {
                 hourstxt.setVisible(false);
                 minutestxt.setVisible(false);
                 secondstxt.setVisible(false);
-                option.setVisible(true);
 
             }
         });
@@ -429,7 +423,6 @@ public class StartMenu implements Runnable {
                     hourstxt.setVisible(true);
                     minutestxt.setVisible(true);
                     secondstxt.setVisible(true);
-                    option.setVisible(false);
 
                 }
             }
